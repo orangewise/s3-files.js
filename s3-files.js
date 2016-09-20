@@ -19,7 +19,7 @@ s3Files.connect = function (opts) {
 s3Files.createKeyStream = function (folder, keys) {
   var self = this;
   self.folder = folder;
-  if (!self.folder || !keys) return null;
+  if (!keys) return null;
   var paths = [];
   keys.forEach(function (key) {
     paths.push(folder + key);
